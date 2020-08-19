@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="mystyle.css">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><Strong>LIBRARY</Strong></h1>
+    <h3>add a book to your library: </h3>
+    <form id="book-form" class="contents">
+        <div class="item"><label for="book-input">book:</label></div>
+        <div class="item"><input  id="title" type="text" name="book-input"></div>
+        <div class="item"><label for="book-rating">book rating:</label></div>
+        <div class="item"><input id="rating" type="number" name="book-rating"></div>
+        <div class="item blank-space"></div>
+        <div class="item"><button type="button" onclick="createBook()">add book to libriary</button></div>
+    </form>
+    <h3>books</h3>
+    <table id="contents">
+        <tr>
+            <th>name</th><th>rating</th>
+        </tr>
+        <table id="book-list">
+
+        </table>
+    </table>
+    <script src="myScript.js"></script>
+</body>
+</html>
