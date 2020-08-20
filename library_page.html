@@ -8,19 +8,28 @@
 </head>
 <body>
     <h1><Strong>LIBRARY</Strong></h1>
-    <h3>add a book to your library: </h3>
-    <form id="book-form" class="contents">
-        <div class="item"><label for="book-input">book:</label></div>
-        <div class="item"><input  id="title" type="text" name="book-input"></div>
-        <div class="item"><label for="book-rating">book rating:</label></div>
-        <div class="item"><input id="rating" type="number" name="book-rating"></div>
-        <div class="item blank-space"></div>
-        <div class="item"><button type="button" onclick="createBook()">add book to libriary</button></div>
-    </form>
+    <button type="button" class="toggle-show"onclick="toggleShow()"><img id="image" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Fb%2Fb3%2FMinus_font_awesome.svg%2F600px-Minus_font_awesome.svg.png&f=1&nofb=1" alt=""></button>
+    <div class="form-contents" id="form-contents">
+        <h3>add a book to your library: </h3>
+        <form id="book-form" class="contents">
+            <div class="item"><label for="book-input">book:</label></div>
+            <div class="item"><input  id="title" type="text" name="book-input"></div>
+            <div class="item"><label for="author">author:</label></div>
+            <div class="item"><input id="author" type="text" name="author"></div>
+            <div class="item"><label for="num-pages">number of pages:</label></div>
+            <div class="item"><input id="num-pages" type="number" name="num-pages"></div>
+            <div class="item"><label for="book-rating">book rating:</label></div>
+            <div class="item"><input id="rating" type="number" name="book-rating"></div>
+            <div class="item"><label for="read-status">read status:</label></div>
+            <div class="item"><input id="read-status" type="checkbox" name="read-status"></div>
+            <div class="item blank-space"><small>by clicking this button you agree to the <em>westmount-library</em>'s terms and services</small></div>
+            <div class="item"><button type="button" onclick="createBook()">add book to library</button></div>
+        </form>
+    </div>
     <h3>books</h3>
     <table id="contents">
         <tr>
-            <th>name</th><th>rating</th>
+            <th>name</th><th>author</th><th>number of pages</th><th>rating</th><th>read status</th><th>change read status</th><th>remove book</th>
         </tr>
         <table id="book-list">
 
